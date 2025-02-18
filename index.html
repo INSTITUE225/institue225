@@ -1,19 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INSTITUT - ACCÈS RESTREINT</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INSTITUT - ACCÈS RESTREINT</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>⚠️ INSTITUT CLASSIFIÉ ⚠️</h1>
-        <p>Ce site est réservé aux membres autorisés uniquement.</p>
-        <p>Tout accès non autorisé sera enregistré et signalé.</p>
-        <button onclick="accesPrive()">Accès Restreint</button>
-    </div>
+  <div class="container">
+    <h1>⚠️ INSTITUT CLASSIFIÉ ⚠️</h1>
+    <p>Ce site est réservé aux membres autorisés uniquement.</p>
+    <p>Tout accès non autorisé sera enregistré et signalé.</p>
+    <button onclick="accesPrive()">Accès Restreint</button>
+  </div>
 
-    <script src="script.js"></script>
+  <script>
+    function accesPrive() {
+      // Redirection vers la page de connexion
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion - Accès Restreint</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Connexion</h1>
+    <form id="loginForm">
+      <label for="username">Nom d'utilisateur :</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Se connecter</button>
+    </form>
+    <p id="errorMessage" style="color: red;"></p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dossiers - Institut</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dossiers de l'Institut</h1>
+    <nav>
+      <ul>
+        <li><a href="institut.html">Accueil</a></li>
+        <li><a href="dossiers.html">Dossiers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Déconnexion</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Liste des Dossiers</h2>
+      <ul>
+        <li><a href="#">Dossier 1</a></li>
+        <li><a href="#">Dossier 2</a></li>
+        <li><a href="#">Dossier 3</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Institut Classifié. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
