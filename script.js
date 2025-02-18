@@ -1,3 +1,3 @@
 function accesPrive() {
-    window.location.href = "https://institue.com"
+    window.location.href = "https://institue225.com"
 }
